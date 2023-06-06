@@ -1,7 +1,5 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { IconButtonModule } from './app/icon-button/icon-button.module';
 
-import { AppModule } from './app/app.module';
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(IconButtonModule)
   .catch(err => console.error(err));
