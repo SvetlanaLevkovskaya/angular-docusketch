@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {icons} from '../data/icons';
 
 @Component({
   selector: 'app-icon-button',
@@ -9,7 +10,7 @@ export class IconButtonComponent {
   @Input() initialIcon: string | undefined;
   @Output() randomIconSelected = new EventEmitter<string>();
 
-  icons = ['fas fa-flag', 'fas fa-heart', 'fas fa-star', 'fas fa-circle'];
+  icons: string[] = icons
   randomIcon: string | undefined;
 
   showRandomIcon(): void {
