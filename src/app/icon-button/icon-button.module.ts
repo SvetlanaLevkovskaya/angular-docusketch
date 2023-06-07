@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { IconButtonComponent } from './icon-button.component';
@@ -13,4 +13,4 @@ import { IconButtonComponent } from './icon-button.component';
   providers: [],
   bootstrap: [IconButtonComponent],
 })
-export class IconButtonModule {}
+export class IconButtonModule {}*/

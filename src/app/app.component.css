@@ -1,0 +1,10 @@
+.app-root {
+  height: 100vh;
+}
+
+.title {
+  color:#00cc00;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 24px;
+}
