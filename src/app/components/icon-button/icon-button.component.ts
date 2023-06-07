@@ -11,14 +11,16 @@ export class IconButtonComponent {
   @Input() initialIcon: string | undefined;
   @Output() randomIconSelected = new EventEmitter<string>();
 
-  icons: string[] = icons
+  icons: string[] = icons;
   randomIcon: string | undefined;
 
   showRandomIcon(): void {
-    interval(3000).pipe(take(1)).subscribe(() => {
-      this.randomIcon = this.getRandomIcon();
-      this.randomIconSelected.emit(this.randomIcon);
-    });
+    interval(3000)
+      .pipe(take(1))
+      .subscribe(() => {
+        this.randomIcon = this.getRandomIcon();
+        this.randomIconSelected.emit(this.randomIcon);
+      });
   }
 
   getRandomIcon(): string {

@@ -15,7 +15,7 @@ describe('IconButtonComponent', () => {
     fixture.detectChanges();
   });
 
-  it("test_random_icon_emitted", () => {
+  it('test_random_icon_emitted', () => {
     const component = new IconButtonComponent();
     spyOn(component.randomIconSelected, 'emit');
     component.icons = ['test-icon'];
@@ -25,7 +25,7 @@ describe('IconButtonComponent', () => {
     }, 3000);
   });
 
-  it("test_show_random_icon", () => {
+  it('test_show_random_icon', () => {
     const component = new IconButtonComponent();
     spyOn(component, 'getRandomIcon').and.returnValue('test-icon');
     spyOn(component.randomIconSelected, 'emit');
@@ -38,13 +38,13 @@ describe('IconButtonComponent', () => {
     }, 3000);
   });
 
-  it("test_initial_icon_displayed", () => {
+  it('test_initial_icon_displayed', () => {
     const component = new IconButtonComponent();
-    component.initialIcon = "fas fa-flag";
-    expect(component.initialIcon).toBe("fas fa-flag");
+    component.initialIcon = 'fas fa-flag';
+    expect(component.initialIcon).toBe('fas fa-flag');
   });
 
-  it("test_empty_icons_array", () => {
+  it('test_empty_icons_array', () => {
     const component = new IconButtonComponent();
     component.icons = [];
     spyOn(component, 'getRandomIcon').and.returnValue('');
@@ -52,18 +52,18 @@ describe('IconButtonComponent', () => {
     expect(component.randomIcon).toBeUndefined();
   });
 
-  it("test_empty_icons_array", () => {
+  it('test_empty_icons_array', () => {
     const component = new IconButtonComponent();
     component.icons = [];
     expect(component.getRandomIcon()).toBeUndefined();
   });
 
-  it("test_initial_icon_undefined", () => {
+  it('test_initial_icon_undefined', () => {
     const component = new IconButtonComponent();
     expect(component.initialIcon).toBeUndefined();
   });
 
-  it("test_get_random_icon_returns_undefined", () => {
+  it('test_get_random_icon_returns_undefined', () => {
     const component = new IconButtonComponent();
     component.icons = ['test-icon'];
     spyOn(Math, 'random').and.returnValue(1);
