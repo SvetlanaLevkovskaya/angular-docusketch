@@ -5,12 +5,12 @@ import { IconButtonComponent } from './icon-button.component';
 
 @NgModule({
   declarations: [
-    IconButtonComponent
+    IconButtonComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
-  bootstrap: [IconButtonComponent]
+  bootstrap: [IconButtonComponent],
 })
-export class IconButtonModule { }
+export class IconButtonModule {}
