@@ -38,10 +38,10 @@ describe('IconButtonComponent', () => {
     }, 3000);
   });
 
-  it("test_initial_icon_defined", () => {
+  it("test_initial_icon_displayed", () => {
     const component = new IconButtonComponent();
-    component.initialIcon = 'test-icon';
-    expect(component.initialIcon).toBe('test-icon');
+    component.initialIcon = "fas fa-flag";
+    expect(component.initialIcon).toBe("fas fa-flag");
   });
 
   it("test_empty_icons_array", () => {
@@ -50,6 +50,12 @@ describe('IconButtonComponent', () => {
     spyOn(component, 'getRandomIcon').and.returnValue('');
     component.showRandomIcon();
     expect(component.randomIcon).toBeUndefined();
+  });
+
+  it("test_empty_icons_array", () => {
+    const component = new IconButtonComponent();
+    component.icons = [];
+    expect(component.getRandomIcon()).toBeUndefined();
   });
 
   it("test_initial_icon_undefined", () => {
