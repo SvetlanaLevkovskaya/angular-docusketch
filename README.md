@@ -6,7 +6,7 @@ The Random Icon Button app is a simple Angular application that allows users to 
 
 ## Features
 
- - Random Icon Generation: The app randomly selects an icon from a predefined set of icons, including a flag, heart, star, and circle. 
+ - Random Icon Generation: The app randomly selects an icon from a predefined set of icons, including a flag, heart, star, circle etc. 
  - Button Interaction: Users can click the "Show Random Icon" button to trigger the generation of a new random icon. 
  - Responsive Design: The app is designed to be responsive and can adapt to different screen sizes and devices.
 
