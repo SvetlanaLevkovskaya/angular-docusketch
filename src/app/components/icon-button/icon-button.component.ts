@@ -1,11 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { icons } from '../../data/icons';
-import { interval, take } from 'rxjs';
+import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { icons } from "../../data/icons";
+import { interval, take } from "rxjs";
 
 @Component({
-  selector: 'app-icon-button',
-  templateUrl: './icon-button.component.html',
-  styleUrls: ['./icon-button.component.css'],
+  selector: "app-icon-button",
+  templateUrl: "./icon-button.component.html",
+  styleUrls: ["./icon-button.component.css"],
 })
 export class IconButtonComponent {
   @Input() initialIcon: string | undefined;
