@@ -8,3 +8,12 @@
   text-align: center;
   padding-top: 24px;
 }
+
+.loading-icon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FF0000;
+  font-size: 48px;
+}

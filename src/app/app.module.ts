@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { IconButtonComponent } from './components/icon-button/icon-button.component';
-import { AppComponent } from './app.component';
+import { IconButtonComponent } from "./components/icon-button/icon-button.component";
+import { AppComponent } from "./app.component";
 
 @NgModule({
   declarations: [AppComponent, IconButtonComponent],

@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = 'random button icon';
+  isLoading = true;
+  title = "random button icon";
   selectedIcon: string | undefined;
+
+  constructor() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 3000);
+  }
 
   handleRandomIconSelected(icon: string): void {
     this.selectedIcon = icon;
