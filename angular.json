@@ -85,6 +85,14 @@
           "options": {
             "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://svetlanalevkovskaya.github.io/angular-docusketch/",
+            "name": "Angular Test Project",
+            "email": "levkovskayase@gmail.com"
+          }
         }
       }
     }
