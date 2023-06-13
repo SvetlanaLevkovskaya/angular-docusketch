@@ -24,7 +24,16 @@ export class IconButtonComponent {
   }
 
   getRandomIcon(): string {
-    const randomIndex = Math.floor(Math.random() * this.icons.length);
-    return this.icons[randomIndex];
+    let currentIndex = this.icons.length;
+    let temporaryValue: string;
+    let randomIndex: number;
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      temporaryValue = this.icons[currentIndex];
+      this.icons[currentIndex] = this.icons[randomIndex];
+      this.icons[randomIndex] = temporaryValue;
+    }
+    return this.icons[0];
   }
 }
